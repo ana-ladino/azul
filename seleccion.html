@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donde el azul habita</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main class="contenido">
+        <h2>VIVE EL PAISAJE</h2>
+        <audio id="audiocompleto" autoplay controls style="display:none;">
+    <source src="adriana_stehle.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+window.addEventListener('load', function () {
+    const audio = document.getElementById('audiocompleto');
+
+    audio.volume = 1.0;
+    audio.muted = false;
+
+    audio.play().catch(error => {
+        console.log("Autoplay blocked by browser:", error);
+    });
+});
+</script>
+    
+        <!-- <a href="./casa.html"> -->
+        <img class="imagen" src="img/Casa del Mar.jpg">
+        <!--</a> -->
+        <h3>La Casa del Mar (Piso 1)</h3>
+
+        <!-- <a href="todoazul.html"> -->
+        <img class="imagen" src="img/Todo Azul.jpg">
+        <!--</a> -->
+        <h3>Todo es Azul y Nada Vuelve - Piso 5</h3>
+
+        <!-- <a href="soledad.html"> -->
+        <img class="imagen" src="img/Soledad.jpg">
+        <!--</a> -->
+        <h3>Soledad Atravesada - Piso 3</h3>
+
+        <!-- <a href="quedarse.html"> -->
+        <img class="imagen" src="img/Quedarse.jpg">
+        <!--</a> -->
+        <h3>Para Quedarse Siempre - Piso 4</h3>
+
+        <!-- <a href="espera.html"> -->
+        <img class="imagen" src="img/Espera.jpg">
+       <!--  </a> -->
+        <h3>El Lugar de la Espera - Piso 2</h3>
+
+        <!-- <a href="presencia.html"> -->
+        <img class="imagen" src="img/Presencia.jpg">
+        <!-- </a> -->
+        <h3>No es Vacio, es Presencia que Permanece - Piso 6</h3>
+
+
+    </main>
+</body>
+</html>
